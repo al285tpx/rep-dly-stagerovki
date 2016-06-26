@@ -12,7 +12,7 @@ echo "Книги \n";
 echo "<br>";
 
 $row = mysqli_fetch_array($result);
-echo $row['id'], $row['title'], $row['year'], $row[author];
+echo $row['id'], $row['title'], $row['year'], $row['author'];
 	
 	mysqli_free_result($result);
 	mysqli_close($mysqli);
