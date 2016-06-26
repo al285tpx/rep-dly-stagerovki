@@ -1,5 +1,4 @@
 <?php //query.php
-echo (Y); //для проверки PHP
 
 include "login.php";
 
