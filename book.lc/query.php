@@ -10,15 +10,24 @@ $result = $mysqli->query("SELECT * FROM `d_books` ORDER BY `d_books`.`id` DESC")
 echo "Книги \n";
 echo "<br>";
 
-$row = mysqli_fetch_array($result);
-echo $row['id'], $row['title'], $row['year'], $row['author'];
+
+while($row = mysqli_fetch_array($result)) {
 	
-	mysqli_free_result($result);
-	mysqli_close($mysqli);
+		
+	echo $row['title'] . "_" ;
+	echo $row['author'] . "_" ;
+	echo $row['year'] . "<br>" ;
+	
+	}
+	 
+	
+//	echo $row['id'], $row['title'], $row['year'], $row['author'];
+	
+//	mysqli_free_result($result);
+//	mysqli_close($mysqli);
 //for ($row_no = $result->num_rows - 1; $row_no >=0; $row_no--) {
 //	$result->data_seek($row_no);
 //	$row = $result->fetch_assoc();
 //	echo " id = " . $row['id'] . "\n";
 //	}
-
 ?>
