@@ -1,33 +1,31 @@
-<?php //query.php
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Books table</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <?php include "login.php" //данные для подключения к БД здесь
+  ?> 
+<h1>Books</h1>
+  <?php
 
-include "login.php";
-
-//$mysqli->real_query("SELECT * FROM d_books");
-//echo($mysqli->field_count);      
-//$result = $mysqli->use_result();
-$result = $mysqli->query("SELECT * FROM `d_books` ORDER BY `d_books`.`id` DESC");
-
-echo "Книги \n";
-echo "<br>";
-
-
-while($row = mysqli_fetch_array($result)) {
+$result = $mysqli->query("SELECT * FROM `d_books` ORDER BY `d_books`.`id` ASC"); //забираем содержимое таблицы d_books и сортируем по id
+	echo "<table width= '100%'>";
+	echo "<tr><td>Title</td><td>Author</td><td>Year</td></tr>";
 	
-		
-	echo $row['title'] . "_" ;
-	echo $row['author'] . "_" ;
-	echo $row['year'] . "<br>" ;
+	while($row = mysqli_fetch_array($result)) { 
 	
+	$title = $row['title'];
+	$author = $row['author'];
+	$year = $row['year'];
+	
+	echo "<tr><td>$title</td><td>$author</td><td>$year</td></tr>";	
 	}
-	 
-	
-//	echo $row['id'], $row['title'], $row['year'], $row['author'];
-	
-//	mysqli_free_result($result);
-//	mysqli_close($mysqli);
-//for ($row_no = $result->num_rows - 1; $row_no >=0; $row_no--) {
-//	$result->data_seek($row_no);
-//	$row = $result->fetch_assoc();
-//	echo " id = " . $row['id'] . "\n";
-//	}
+	echo "</table>";
 ?>
+</body>
+
+</html>
