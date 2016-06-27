@@ -16,7 +16,7 @@ $result = $mysqli->query("SELECT * FROM `d_books` ORDER BY `d_books`.`id` ASC");
 	echo "<table width= '100%'>";
 	echo "<tr><td>Title</td><td>Author</td><td>Year</td></tr>";
 	
-	while($row = mysqli_fetch_array($result)) { 
+	while($row = mysqli_fetch_array($result)) {  //выводим содержимое через цикл
 	
 	$title = $row['title'];
 	$author = $row['author'];
