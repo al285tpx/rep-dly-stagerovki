@@ -29,7 +29,7 @@ login.php
 images/*
 /.idea/*
 /_linux/*
-/inpetcion/*
+/inspection/*
 # Игнорирование ВСЕХ html-файлов в ОДНОЙ КОНКРЕТНОЙ директории(НЕ ВКЛЮЧАЯ поддиректории)
 # Например /private/index.html
 # НЕ БУДУТ проигнорированы файлы в /private/ivan/index.html
@@ -53,3 +53,14 @@ images/*
 
 Будет удалено .idea/
 Будет удалено book.lc/.idea/
+/book.lc/query.php
+/colors.scheme.xml
+/databaseDrivers.xml
+/databaseSettings.xml
+/debugger.xml
+/diff.xml
+/intentionSettings.xml
+/IntelliLang.xml
+/php.xml
+/ui.lnf.xml
+/web-browsers.xml
