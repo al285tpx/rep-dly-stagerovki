@@ -64,3 +64,6 @@ images/*
 /php.xml
 /ui.lnf.xml
 /web-browsers.xml
+/book.lc/info.php
+/book.lc/connect.php
+/book.lc/books.sql
