@@ -51,3 +51,5 @@ images/*
 # Например /images/h4/user.jpg, /images/h/company.jpeg
 #/images/h?/*.jp?g
 
+Будет удалено .idea/
+Будет удалено book.lc/.idea/
