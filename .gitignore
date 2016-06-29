@@ -27,9 +27,9 @@ login.php
 # Игнорирование всех файлов и папок в ЛЮБЫХ директориях с указанным именем
 # Например /images/user.jpg, /core/images/user.jpg
 images/*
-/.idea/*
-/_linux/*
-/inspection/*
+/book.lc/.idea/*
+/book.lc/_linux/*
+/book.lc/inspection/*
 # Игнорирование ВСЕХ html-файлов в ОДНОЙ КОНКРЕТНОЙ директории(НЕ ВКЛЮЧАЯ поддиректории)
 # Например /private/index.html
 # НЕ БУДУТ проигнорированы файлы в /private/ivan/index.html
@@ -67,3 +67,8 @@ images/*
 /book.lc/info.php
 /book.lc/connect.php
 /book.lc/books.sql
+Будет удалено books.sql
+Будет удалено connect.php
+Будет удалено index.php
+Будет удалено info.php
+Будет удалено query.php
